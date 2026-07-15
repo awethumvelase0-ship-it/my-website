@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About – John Doe</title>
+<meta name="description" content="Learn more about John Doe – Full-Stack Developer & UI/UX Designer.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0a0f;color:#e2e8f0;overflow-x:hidden}
+:root{--g:linear-gradient(135deg,#6366f1,#a855f7,#ec4899)}
+nav{position:fixed;top:0;width:100%;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(12px);background:rgba(10,10,15,.7);z-index:99}
+.logo{font-weight:700;font-size:1.2rem;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+nav a{color:#94a3b8;text-decoration:none;margin-left:1.5rem;font-size:.9rem;transition:.3s}
+nav a:hover{color:#fff}
+.page{max-width:780px;margin:auto;padding:8rem 2rem 4rem}
+.badge{display:inline-block;padding:.35rem 1rem;border-radius:50px;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.3);color:#a5b4fc;font-size:.8rem;margin-bottom:1.2rem}
+h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;margin-bottom:1rem}
+h1 span{background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.bio{color:#94a3b8;line-height:1.8;font-size:1.05rem;margin-bottom:2.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:3rem}
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1.4rem}
+.card .icon{font-size:1.6rem;margin-bottom:.6rem}
+.card h3{font-size:.95rem;font-weight:600;margin-bottom:.3rem}
+.card p{color:#64748b;font-size:.82rem;line-height:1.5}
+.timeline{border-left:2px solid rgba(168,85,247,.3);padding-left:1.5rem}
+.event{position:relative;margin-bottom:1.8rem}
+.event::before{content:'';width:10px;height:10px;border-radius:50%;background:var(--g);position:absolute;left:-1.97rem;top:.3rem}
+.event h4{font-size:.95rem;font-weight:600}
+.event span{color:#6366f1;font-size:.8rem}
+.event p{color:#64748b;font-size:.85rem;margin-top:.3rem}
+.btn{display:inline-block;padding:.7rem 1.8rem;border-radius:50px;background:var(--g);color:#fff;font-weight:500;text-decoration:none;transition:transform .3s,box-shadow .3s;margin-top:2rem}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(168,85,247,.4)}
+.back{display:inline-flex;align-items:center;gap:.4rem;color:#94a3b8;text-decoration:none;font-size:.9rem;transition:.3s;margin-top:2.5rem}
+.back:hover{color:#a855f7}
+footer{text-align:center;padding:2rem;color:#334155;font-size:.8rem;border-top:1px solid rgba(255,255,255,.05);margin-top:3rem}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">JD.</a>
+  <div><a href="index.html">Home</a><a href="index.html#work">Work</a><a href="index.html#contact">Contact</a></div>
+</nav>
+
+<div class="page">
+  <div class="badge">👋 Nice to meet you</div>
+  <h1>I'm <span>John Doe</span>,<br>I build things for the web.</h1>
+  <p class="bio">
+    I'm a full-stack developer and UI/UX designer with 5+ years of experience crafting fast, accessible, and beautiful digital products. I love turning complex problems into simple, elegant solutions — from pixel-perfect interfaces to scalable back-end systems.<br><br>
+    When I'm not coding, you'll find me hiking trails, sketching UI concepts, or contributing to open-source projects.
+  </p>
+
+  <div class="grid">
+    <div class="card"><div class="icon">🎨</div><h3>Design</h3><p>Figma, design systems, motion & accessibility-first thinking.</p></div>
+    <div class="card"><div class="icon">⚙️</div><h3>Engineering</h3><p>React, Node.js, TypeScript, PostgreSQL & cloud infrastructure.</p></div>
+    <div class="card"><div class="icon">🚀</div><h3>Shipping</h3><p>CI/CD pipelines, Docker, AWS — from idea to production fast.</p></div>
+  </div>
+
+  <h2 style="font-size:1.4rem;margin-bottom:1.2rem;font-weight:700">Experience</h2>
+  <div class="timeline">
+    <div class="event"><h4>Senior Developer – Acme Corp</h4><span>2023 – Present</span><p>Led frontend architecture for a SaaS platform serving 50k+ users.</p></div>
+    <div class="event"><h4>UI/UX Engineer – Pixel Labs</h4><span>2021 – 2023</span><p>Designed and built cross-platform design systems used by 3 products.</p></div>
+    <div class="event"><h4>Junior Developer – StartupXYZ</h4><span>2019 – 2021</span><p>Full-stack development on an e-commerce platform using React & Node.</p></div>
+  </div>
+
+  <a href="index.html#contact" class="btn">Work With Me →</a>
+  <br>
+  <a href="index.html" class="back">← Back to Home</a>
+</div>
+
+<footer>© 2026 John Doe · Built with passion</footer>
+</body>
+</html>
